@@ -40,14 +40,14 @@ Environment:
 - venv
 
 Requirements:
-pandas
-numpy
-scikit-learn
-matplotlib
-seaborn
-fastapi
-uvicorn
-joblib
+pandas  
+numpy  
+scikit-learn  
+matplotlib  
+seaborn  
+fastapi  
+uvicorn  
+joblib  
 
 ---
 
