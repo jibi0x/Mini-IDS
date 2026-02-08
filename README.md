@@ -13,7 +13,7 @@ Mini-IDS is designed to run locally on a personal machine and is deployed as a *
 ## Quick Start
 
 ```bash
-git clone <repository-url>
+git clone git@github.com:jibi0x/Mini-IDS.git
 cd mini-ids
 python -m venv .venv
 
