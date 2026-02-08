@@ -10,6 +10,15 @@ Mini-IDS is designed to run locally on a personal machine and is deployed as a *
 
 ---
 
+## Quick Start
+git clone [repo]  
+cd mini-ids  
+python -m venv .venv  
+.venv\Scripts\activate  
+pip install -r Requirements.txt  
+
+---
+
 ## Tech Stack
 
 - **Language:** Python  
@@ -51,20 +60,6 @@ mini-ids/
 
 ---
 
-## Phase 0: Live Traffic Capture & Flow Generation
-Capture network packets from a local network interface and aggregate them into bidirectional network flows.
-
-Scope:  
-- Packet capture using Scapy (or tshark)  
-- Flow identification using 5-tuple (src IP, dst IP, src port, dst port, protocol)  
-- Flow lifecycle management (timeouts, expiration)  
-- Packet and byte counters per flow  
-
-Output:  
-- In-memory flow records ready for feature extraction  
-
----
-
 ## Phase 1: Dataset Ingestion & Cleaning 
 Prepare the CICIDS2017 dataset for model training.
 
@@ -95,7 +90,21 @@ Output:
 
 ---
 
-## Phase 3: Feature Engineering
+## Phase 3: Live Traffic Capture & Flow Generation
+Capture network packets from a local network interface and aggregate them into bidirectional network flows.
+
+Scope:  
+- Packet capture using Scapy (or tshark)  
+- Flow identification using 5-tuple (src IP, dst IP, src port, dst port, protocol)  
+- Flow lifecycle management (timeouts, expiration)  
+- Packet and byte counters per flow  
+
+Output:  
+- In-memory flow records ready for feature extraction  
+
+---
+
+## Phase 4: Feature Engineering
 
 Transform raw flow data into ML-ready numerical features.
 
@@ -110,7 +119,7 @@ Output:
 
 ---
 
-## Phase 4: Model Training
+## Phase 5: Model Training
 
 Train a supervised machine learning model for intrusion detection.
 
@@ -126,7 +135,7 @@ Output:
 
 ---
 
-## Phase 5: Model Evaluation & Validation  
+## Phase 6: Model Evaluation & Validation  
 
 Assess model effectiveness using security-relevant metrics.
 
@@ -141,7 +150,7 @@ Output:
 
 ---
 
-## Phase 6: Model Serialization & Artifact Management 
+## Phase 7: Model Serialization & Artifact Management 
 
 Prepare the model for deployment.
 
@@ -155,7 +164,7 @@ Output:
 
 ---
 
-## Phase 7: Real-Time Inference Engine 
+## Phase 8: Real-Time Inference Engine 
 
 Perform real-time intrusion detection on live network traffic.
 
@@ -170,7 +179,7 @@ Output:
 
 ---
 
-## Phase 8: API Development  
+## Phase 9: API Development  
 
 Expose intrusion detection results through a REST API.
 
@@ -185,7 +194,7 @@ Output:
 
 ---
 
-## Phase 9: Containerization & Local Deployment 
+## Phase 10: Containerization & Local Deployment 
 
 Deploy the Mini-IDS in a reproducible environment.
 
@@ -200,7 +209,7 @@ Output:
 
 ---
 
-## Phase 10: Documentation & Threat Context  
+## Phase 11: Documentation & Threat Context  
 
 Document system behavior and security relevance.
 
