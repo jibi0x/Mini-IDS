@@ -31,7 +31,7 @@ pip install -r requirements.txt
 - **Language:** Python  
 - **Machine Learning:** Scikit-learn  
 - **Model:** Random Forest  
-- **Dataset:** CICIDS2017  
+- **Dataset:** [CICIDS2017](https://www.unb.ca/cic/datasets/ids-2017.html)  
 - **API:** FastAPI  
 - **Deployment:** Docker  
 - **Environment:** Local PC (future home lab: Ubuntu Server + Docker)
