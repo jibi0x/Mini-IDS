@@ -11,11 +11,20 @@ Mini-IDS is designed to run locally on a personal machine and is deployed as a *
 ---
 
 ## Quick Start
-git clone [repo]  
-cd mini-ids  
-python -m venv .venv  
-.venv\Scripts\activate  
-pip install -r Requirements.txt  
+
+```bash
+git clone <repository-url>
+cd mini-ids
+python -m venv .venv
+
+# Windows
+.venv\Scripts\activate
+
+# Linux / macOS
+source .venv/bin/activate
+
+pip install -r requirements.txt
+```
 
 ---
 
