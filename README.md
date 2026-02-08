@@ -26,8 +26,6 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
----
-
 ## Tech Stack
 
 - **Language:** Python  
@@ -37,8 +35,6 @@ pip install -r requirements.txt
 - **API:** FastAPI  
 - **Deployment:** Docker  
 - **Environment:** Local PC (future home lab: Ubuntu Server + Docker)
-
----
 
 ## Project Structure
 
@@ -67,8 +63,6 @@ mini-ids/
 - uvicorn  
 - joblib  
 
----
-
 ## Phase 1: Dataset Ingestion & Cleaning 
 Prepare the CICIDS2017 dataset for model training.
 
@@ -81,8 +75,6 @@ Scope:
 
 Output:  
 - Cleaned, structured training dataset  
-
----
 
 ## Phase 2: Feature Selection & Schema Definition 
 
@@ -97,8 +89,6 @@ Scope:
 Output:  
 - Fixed feature schema shared by training and live inference  
 
----
-
 ## Phase 3: Live Traffic Capture & Flow Generation
 Capture network packets from a local network interface and aggregate them into bidirectional network flows.
 
@@ -110,8 +100,6 @@ Scope:
 
 Output:  
 - In-memory flow records ready for feature extraction  
-
----
 
 ## Phase 4: Feature Engineering
 
@@ -125,8 +113,6 @@ Scope:
 
 Output:  
 - Feature vectors aligned with the model’s input requirements  
-
----
 
 ## Phase 5: Model Training
 
@@ -142,8 +128,6 @@ Scope:
 Output:  
 - Trained intrusion detection model  
 
----
-
 ## Phase 6: Model Evaluation & Validation  
 
 Assess model effectiveness using security-relevant metrics.
@@ -157,8 +141,6 @@ Scope:
 Output:  
 - Validated model with documented performance  
 
----
-
 ## Phase 7: Model Serialization & Artifact Management 
 
 Prepare the model for deployment.
@@ -170,8 +152,6 @@ Scope:
 
 Output:  
 - Deployment-ready model artifacts  
-
----
 
 ## Phase 8: Real-Time Inference Engine 
 
@@ -186,8 +166,6 @@ Scope:
 Output:  
 - Real-time intrusion classification results  
 
----
-
 ## Phase 9: API Development  
 
 Expose intrusion detection results through a REST API.
@@ -201,8 +179,6 @@ Scope:
 Output:  
 - Accessible inference API for live detection  
 
----
-
 ## Phase 10: Containerization & Local Deployment 
 
 Deploy the Mini-IDS in a reproducible environment.
@@ -215,8 +191,6 @@ Scope:
 
 Output:  
 - Containerized Mini-IDS running locally  
-
----
 
 ## Phase 11: Documentation & Threat Context  
 
