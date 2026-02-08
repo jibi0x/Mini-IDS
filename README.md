@@ -34,6 +34,8 @@ mini-ids/
 ├── docs/
 └── README.md
 
+```text
+
 Environment:
 - Python 3.10+
 - venv
@@ -48,6 +50,8 @@ fastapi
 uvicorn
 joblib
 
+---
+
 Phase 0: Live Traffic Capture & Flow Generation
 Capture network packets from a local network interface and aggregate them into bidirectional network flows.
 
@@ -59,6 +63,8 @@ Packet and byte counters per flow
 
 Output:
 In-memory flow records ready for feature extraction
+
+---
 
 Phase 1: Dataset Ingestion & Cleaning
 Prepare the CICIDS2017 dataset for model training.
@@ -73,6 +79,8 @@ Ensure consistency across merged datasets
 Output:
 Cleaned, structured training dataset
 
+---
+
 Phase 2: Feature Selection & Schema Definition
 
 Define a feature schema that can be reproduced in live traffic.
@@ -86,6 +94,8 @@ Lock feature ordering and data types
 Output:
 Fixed feature schema shared by training and live inference
 
+---
+
 Phase 3: Feature Engineering
 
 Transform raw flow data into ML-ready numerical features.
@@ -98,6 +108,8 @@ Apply identical transformations to training and live data
 
 Output:
 Feature vectors aligned with the model’s input requirements
+
+---
 
 Phase 4: Model Training
 
@@ -113,6 +125,8 @@ Model performance optimization with security-focused metrics
 Output:
 Trained intrusion detection model
 
+---
+
 Phase 5: Model Evaluation & Validation
 
 Assess model effectiveness using security-relevant metrics.
@@ -126,6 +140,8 @@ ROC-AUC measurement
 Output:
 Validated model with documented performance
 
+---
+
 Phase 6: Model Serialization & Artifact Management
 
 Prepare the model for deployment.
@@ -137,6 +153,8 @@ Version trained models for reproducibility
 
 Output:
 Deployment-ready model artifacts
+
+---
 
 Phase 7: Real-Time Inference Engine
 
@@ -151,6 +169,8 @@ Generate detection results (benign vs attack)
 Output:
 Real-time intrusion classification results
 
+---
+
 Phase 8: API Development
 
 Expose intrusion detection results through a REST API.
@@ -164,6 +184,8 @@ Localhost deployment for development
 Output:
 Accessible inference API for live detection
 
+---
+
 Phase 9: Containerization & Local Deployment
 
 Deploy the Mini-IDS in a reproducible environment.
@@ -176,6 +198,8 @@ Preparation for future home lab deployment
 
 Output:
 Containerized Mini-IDS running locally
+
+---
 
 Phase 10: Documentation & Threat Context
 
