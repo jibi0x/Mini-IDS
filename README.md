@@ -1,23 +1,30 @@
-Network Intrusion Detection (Mini-IDS)
+# Network Intrusion Detection (Mini-IDS)
 
-Mini-IDS is a flow-based Network Intrusion Detection System that performs real-time analysis of live network traffic using supervised machine learning.
+Mini-IDS is a **flow-based Network Intrusion Detection System (IDS)** that performs real-time analysis of live network traffic using supervised machine learning.
 
-The system captures raw packets from a network interface, aggregates them into network flows, extracts CICIDS2017-aligned features, and classifies traffic as benign or malicious using a Random Forest model.
+The system captures raw packets from a network interface, aggregates them into network flows, extracts **CICIDS2017-aligned features**, and classifies traffic as **benign or malicious** using a Random Forest model.
 
-The model is trained on a cleaned and feature-selected subset of the CICIDS2017 dataset, ensuring consistency between offline training and live inference.
+The model is trained on a cleaned and feature-selected subset of the **CICIDS2017 dataset**, ensuring consistency between offline training and live inference.
 
-Mini-IDS is designed to run locally on a personal machine and is deployed as a containerized FastAPI service, serving as a practical, end-to-end intrusion detection pipeline rather than a dataset-only ML experiment.
+Mini-IDS is designed to run locally on a personal machine and is deployed as a **containerized FastAPI service**, serving as a practical, end-to-end intrusion detection pipeline rather than a dataset-only ML experiment.
 
-Tech Stack:
-Language: Python
-ML: Scikit-Learn
-Model: Random Forest
-Dataset: CICIDS2017
-API: FastAPI
-Deployment: Docker
-Home Lab: Ubuntu Server + Docker
+---
 
-Folder Structure:
+## Tech Stack
+
+- **Language:** Python  
+- **Machine Learning:** Scikit-learn  
+- **Model:** Random Forest  
+- **Dataset:** CICIDS2017  
+- **API:** FastAPI  
+- **Deployment:** Docker  
+- **Environment:** Local PC (future home lab: Ubuntu Server + Docker)
+
+---
+
+## Project Structure
+
+```text
 mini-ids/
 ├── data/
 ├── notebooks/
