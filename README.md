@@ -33,8 +33,7 @@ mini-ids/
 ├── docker/
 ├── docs/
 └── README.md
-
-```text
+```
 
 Environment:
 - Python 3.10+
